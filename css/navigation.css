@@ -1,8 +1,8 @@
 
 #navigation {
     display: flex;
-    height: 30px;
-    border: 0.5px solid black;
+    height: 50px;
+    border: 2px solid black;
     align-items: center;
     justify-content: space-between;
 }
@@ -22,6 +22,7 @@
     height: 30px;
     align-items: center;
     justify-content: space-between;
+    border: 2px solid blue;
 }
 
 .navigation__menu__item {
@@ -29,9 +30,26 @@
     min-width: 70px;
     max-width: 100px;
     height: 30px;
+    padding-left: 5px;
+    padding-right: 5px;
     align-items: center;
     justify-content: center;
+    background: red;
+    border: 2px solid black;
 }
 
+.navigation__menu__item a {
+    text-decoration: none;
+    color: blue;
+}
+
+
+.navigation__menu__item:hover {
+    box-shadow: 2px 2px 2px 2px black;
+}
+
+.newsletter {
+    margin-right: 150px;
+}
 
 
