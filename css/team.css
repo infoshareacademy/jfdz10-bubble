@@ -1,12 +1,72 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
 .team {
+    margin-top: 40px;
     display:flex;
-    height: 100vh;
+    flex-wrap: wrap;
+    align-content: space-evenly;
+    justify-content: space-evenly;
+    /* height: 100vh; */
     width: 100vw;
-    background-color: pink;   
+    /* background-color: grey;  */
+    min-width: 728px; 
+    
+}
+
+.team__mate {
+    display: flex;
+    align-items: center;
+    padding: 1%;
+    margin: 5px;
+    width: 45vw;
+    height: 47vh;  
+    border-radius: 10px;  
+    background-color: white;
+    box-shadow: 0 0 7px #55555583;
+    min-width: 400px;
+    min-height: 300px;
+}
+
+.team__mate__photo {
+    width: 50%;
+    height: 90%;
+    background-color: grey;
+
+}
+
+.team__mate__desc {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    height: 90%;
+    width: 50%;
+    text-align: center;
+}
+
+.team__mate__desc__header {
+    width: 100%;
+    padding: 3%;
+    background-color: aqua;    
+    max-height: 20%;
+}
+
+.team__mate__desc__info {
+    width: 100%;
+    padding: 0% 3% 0% 3%;
+}
+
+.team__mate__social {
+    width: 100%;
+    background-color: chocolate;
+    display: flex;
+    padding: 3px;
+}
+
+.team__mate__social__link {
+    flex-grow: 1;
+    height: inherit;
+    background-color: blue;
+    
 }
