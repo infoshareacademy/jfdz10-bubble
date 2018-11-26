@@ -1,5 +1,9 @@
-* {
+#team {
     box-sizing: border-box;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+
 }
 
 .team {
@@ -8,21 +12,15 @@
     flex-wrap: wrap;
     align-content: space-evenly;
     justify-content: space-evenly;
-    /* height: 100vh; */
-    width: 100vw;
-    /* background-color: grey;  */
-    min-width: 728px; 
-    
+    width: 100vw;    
+    min-width: 700px;    
 }
 
 .team__mate {
     display: flex;
     align-items: center;
-    padding: 1%;
-    margin: 5px;
-    width: 45vw;
-    height: 47vh;  
-    border-radius: 10px;  
+    height: 47vh;   
+    flex-basis: 50%;
     background-color: white;
     box-shadow: 0 0 7px #55555583;
     min-width: 400px;
@@ -31,7 +29,7 @@
 
 .team__mate__photo {
     width: 50%;
-    height: 90%;
+    height: 100%;
     background-color: grey;
 
 }
@@ -40,7 +38,7 @@
     display: flex;
     flex-wrap: wrap;
     background-color: antiquewhite;
-    height: 90%;
+    height: 100%;
     width: 50%;
     text-align: center;
 }
@@ -50,6 +48,7 @@
     padding: 3%;
     background-color: aqua;    
     max-height: 20%;
+    font-size: 2em;
 }
 
 .team__mate__desc__info {
