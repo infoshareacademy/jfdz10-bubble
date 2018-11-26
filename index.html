@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="/css/reset.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="/css/newsletter.css" />
     <script src="main.js"></script>
 </head>
 <body>
@@ -16,12 +17,18 @@
     <section id="team"></section>
     <section id="advanced-functionalities"></section>
     <section id="newsletter">
-        <form class="container" action="/action_page.php" target="_blank">
-            <p>Email:</p>
-            <input type="email" name="email">
-            <p>Name:</p>
-            <input type="text" name="name">
-            <input type="submit" value="Send">
+        <form class="form-flex">
+            <div class="form-title">
+                <p>If you want to get information about the product release leave your email below*</p>
+            </div>
+            <div class="name"><input type="text" name="name" placeholder="Your name..."></div>
+            <div class="email"><input type="email" name="email" placeholder="Your email..."></div>
+            <div class="textarea"><textarea name="message" placeholder="Your message (optional)"></textarea></div>
+            <div class="button"><input type="submit" value="Send"></div>
+            <div class="clause-info">
+                <p>*In response, one email will be sent with information about the product release</p>
+                <p>The personal data received will not be used for any other purpose and will not be given to anyone.</p>
+            </div>
              
         </form>
 
