@@ -1,17 +1,15 @@
 #team {
     box-sizing: border-box;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 300;
-
+    font-size: 2vmax;
+    /* font-family: inherit;  */
 }
 
 .team {
     margin-top: 40px;
     display:flex;
     flex-wrap: wrap;
-    align-content: space-evenly;
-    justify-content: space-evenly;
+    /* align-content: space-evenly; */
+    /* justify-content: space-evenly; */
     width: 100vw;    
     min-width: 700px;    
 }
@@ -19,10 +17,10 @@
 .team__mate {
     display: flex;
     align-items: center;
-    height: 47vh;   
+    height: 50vh;   
     flex-basis: 50%;
-    background-color: white;
-    box-shadow: 0 0 7px #55555583;
+    /* background-color: white; */
+    /* box-shadow: 0 0 7px #55555583; */
     min-width: 400px;
     min-height: 300px;
 }
@@ -48,12 +46,12 @@
     padding: 3%;
     background-color: aqua;    
     max-height: 20%;
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 .team__mate__desc__info {
-    width: 100%;
-    padding: 0% 3% 0% 3%;
+    width: 100%;   
+    margin: 0 1em;
 }
 
 .team__mate__social {
@@ -66,6 +64,16 @@
 .team__mate__social__link {
     flex-grow: 1;
     height: inherit;
-    background-color: blue;
-    
+    background-color: blue;  
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;  
+}
+
+.team__mate__social__github {
+    background-image: url(../images/github.svg);
+}
+
+.team__mate__social__linkedin {
+    background-image: url(../images/facebook.svg);
 }
