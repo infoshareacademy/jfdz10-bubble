@@ -1,0 +1,17 @@
+.to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+    background-image: url(../images/up.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.to-top__link {
+    display:inline-block;
+    width:100%;
+    height:100%;
+    
+}
