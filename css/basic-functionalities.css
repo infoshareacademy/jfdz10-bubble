@@ -1,6 +1,6 @@
 
-.basic-functionalities {
-    margin: 40px  auto 10px auto;       
+.basic-functionalities__header {
+    margin: 50px  auto 0px auto;       
     text-align: center;
     padding: 20px;
     background-color: #fafafa;
@@ -15,24 +15,116 @@
 
 .basic-functionalities {   
     box-sizing: border-box; 
-    margin: 0 auto;  
+    margin: 80px auto;  
     display:flex;
     flex-wrap: wrap;
-    justify-content: center; 
-    align-content: center; 
+    align-items: center;
     max-width: 100vw;  
     min-width: 600px;    
     color: #313131;
     font-family: 'Inconsolata', sans-serif; 
     font-weight: 200;
     font-size: 1.8vh;
+    overflow: hidden;
+}
+
+.basic-functionalities__functionality__container {
+    display: flex;
+    flex-basis: 25%;    
+    height: 60vh;    
 }
 
 .basic-functionalities__functionality {
-    display: flex;
-    flex-basis: 40%;
-    max-height: 50vh;
-    min-width: 400px;;
-    margin: 20px;   
-    overflow: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+}
+
+.basic-functionalities__functionality__text {
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    max-width: 70%;
+    font-size: 2.5em;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: -1px 0 #f0f0f0, 0 1px #f0f0f0, 1px 0 #f0f0f0, 0 -1px #f0f0f0;
+    
+}
+
+.basic-functionalities__functionality__field {
+    background-image: url(../images/field.jpg);    
+}
+
+.basic-functionalities__functionality__field:hover {
+    background-image: url(../images/field2.jpg);
+}
+
+.basic-functionalities__functionality__team {
+    background-image: url(../images/fussball.jpg);
+   
+}
+
+.basic-functionalities__functionality__team:hover {
+    background-image: url(../images/fussball2.jpg);
+}
+
+
+.basic-functionalities__functionality__player {
+    background-image: url(../images/football.jpg);    
+}
+
+.basic-functionalities__functionality__player:hover {
+    background-image: url(../images/shoes.jpg);
+}
+
+.basic-functionalities__functionality__sports {
+    background-image: url(../images/basketball.jpg);
+}
+
+.basic-functionalities__functionality__sports:hover {
+    background-image: url(../images/volleyball.jpg);
+}
+
+/* ****************** MEDIA QUERIES ******************** */
+
+@media only screen and (min-width: 728px) and (max-width: 1024px)  {
+    .basic-functionalities__functionality__container {
+        flex-basis: 50%;  
+    }
+
+    .basic-functionalities {   
+        margin: 40px auto; 
+        min-width: 350px; 
+    }
+
+    .basic-functionalities__header {
+        min-width: 100vw;
+    }
+
+    .team__mate__desc__header {
+        font-size: 1.3em;
+    }
+
+}
+
+
+@media only screen and (max-width: 728px) {
+    .basic-functionalities__functionality__container {
+        flex-basis: 100%;  
+    }
+
+    .basic-functionalities { 
+        margin: 20px 0;   
+        min-width: 1px; 
+    }
+
+    .basic-functionalities__header {
+        min-width: 250px;
+    }
 }
