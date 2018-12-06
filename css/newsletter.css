@@ -1,0 +1,147 @@
+#newsletter{
+    padding-top: 30px;
+}
+.form-title{
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 200;
+    background-color: #fafafa;
+    border-bottom: 1px solid #f0f0f0;
+    border-top: 1px solid #f0f0f0;
+    color: #313131;
+    font-size: 3vh;
+    padding: 30px 12px;
+    margin: auto;
+    text-align: center;
+}
+
+.contact{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    max-width: 1024px;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+    background: #fff;
+}
+
+.info{
+    padding: 30px 40px;
+    max-width: 250px;
+    flex-grow: 1;
+}
+
+.info p, a{
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 200;
+    color: #313131;
+    font-size: 16px;
+    text-decoration: none; 
+    display: inline-block;
+}
+
+.info a{
+    margin: 27.6px 0px;
+}
+
+.phone{
+    margin: 27.6px 0;
+}
+.form-flex{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1024px;
+    margin: auto;
+    padding: 20px;
+}
+
+.description{
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 200;
+    color: #313131;
+    font-size: 20px;
+}
+
+.text-box, .textarea{
+    display: flex;
+    width: 100%;
+    max-width: 1024px;
+    justify-content: center;
+    padding: 10px;
+}
+
+input[type=text], [type=email]{
+    max-width: 600px;
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 20px;
+    margin: 8px 0;
+    border: none;
+    border: 1px solid #6be1ff;
+    outline: none;
+}
+
+.textarea{
+    margin-top: 10px;
+}
+
+textarea{
+    max-width: 600px;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 1px solid #6be1ff;
+    resize: vertical;
+    outline: none;
+}
+
+.clause-info{
+    font-family: 'Inconsolata', sans-serif;
+    font-weight: 200;
+    color: #313131;
+    font-size: 15px;
+    padding: 40px 10px;
+    text-align: center;
+}
+
+.clause-info p{
+    padding: 3px;
+}
+
+.button{
+    margin-top: 20px;   
+}
+
+input[type="submit"]{
+    background-color: #6be1ff;
+    padding: 12px;
+    border: none;
+    outline: none;
+    border-radius: 24px;
+    color: #fff;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover{
+    background-color: rebeccapurple;
+}
+
+/********************************************
+MEDIA QUERIES
+*********************************************/
+
+@media screen and (max-width: 768px){
+    .contact{
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .info, .phone{
+        padding: 10px;
+    }
+
+}
