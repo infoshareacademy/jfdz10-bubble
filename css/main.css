@@ -1,3 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700');
+
+
+/* kolor bazowy */
+background-color: #fff
+/*kolor 2 - */
+background-color: #fafafa
+/* kolor akcent */
+background-color: #c6cb7a  

@@ -41,20 +41,10 @@ h2 {
     margin-top: 10vh;  
 }
 
-.round-button:hover{
-    background-color: #6be1ff;
-    opacity: 0.9;
-    background-size: cover;
-    color: black;
-    transition: 0.5s all ease-in-out;
-    box-sizing: border-box;
-}
-
 .slogan h2 {
     margin: 5px;
     text-align: right;
 }
-
 
 .round-button {
     color: #ffffff;
@@ -67,6 +57,17 @@ h2 {
     font-size: 20px;
     border: 3px solid #ffffff;
 }
+.round-button:hover{
+    background-color: #c6cb7a ;
+    opacity: 0.9;
+    background-size: cover;
+    color: black;
+    transition: 0.5s all ease-in-out;
+    box-sizing: border-box;
+}
+/* #dcd0bc szary
+#f37975 czerwien 
+#e8db6d zolty */
 
 @media screen and (max-width: 1700px){
 
