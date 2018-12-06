@@ -7,6 +7,7 @@
     <html lang="en">
     <title>Bubble Project - Playground</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" media="screen" href="css/navigation.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="./css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
@@ -18,7 +19,20 @@
 </head>
 
 <body>
-    <section id="navigation"></section>
+    <section id="navigation" class="navigation">
+        <div class="navigation__container">
+        <div class="navigation__logo">
+            <img src="images/logo.png" alt="logo" class="logo">
+        </div>
+        <div class="navigation__menu">
+            <div class="navigation__menu__item menu__item__introduction"><a href="#hero">Introduction</a></div>
+            <div class="navigation__menu__item menu__item__funcionalities"><a href="#basic-funcionalities">Funcionalities</a></div>
+            <div class="navigation__menu__item menu__item__team"><a href="#team">Team</a></div>
+            <div class="navigation__menu__item menu__item__advanced-functionalities"><a href="#avanced-funcionalities">More</a></div>
+            <div class="navigation__menu__item menu__item__newsletter"><a href="#newsletter">Newsletter</a></div>  
+        </div>
+    </div>
+    </section>
     <section id="hero"></section>
     <section id="basic-functionalities">
         <h1 class="basic-functionalities__header">What will you get?</h1>
