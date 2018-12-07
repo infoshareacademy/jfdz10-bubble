@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa:300,400,700');
 
+*{
+    font-family:'Roboto', sans-serif;
+    color: #313131;
+}
+ 
+/* ===============COLORS============== */
+   
+ /* #c6cb7a     color used as accent. hoovers thick lines etc. Good for backgorund in FOOTER */
 
-/* kolor bazowy */
-background-color: #fff
-/*kolor 2 - */
-background-color: #fafafa
-/* kolor akcent */
-background-color: #c6cb7a  
+ /* #fafafa     color used as backgorund. for whole containers and smaller objects */
+
+ /* #fff        main color.*/
+
+/* #313131       main font color. color may be used also as accent.*/
