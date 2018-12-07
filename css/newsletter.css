@@ -2,7 +2,7 @@
     padding-top: 30px;
 }
 .form-title{
-    font-family: 'Inconsolata', sans-serif;
+    font-family:'Comfortaa', sans-serif;
     font-weight: 200;
     background-color: #fafafa;
     border-bottom: 1px solid #f0f0f0;
@@ -32,7 +32,7 @@
 }
 
 .info p, a{
-    font-family: 'Inconsolata', sans-serif;
+    font-family:'Comfortaa', sans-serif;
     font-weight: 200;
     color: #313131;
     font-size: 16px;
@@ -58,7 +58,7 @@
 }
 
 .description{
-    font-family: 'Inconsolata', sans-serif;
+    font-family:'Comfortaa', sans-serif;
     font-weight: 200;
     color: #313131;
     font-size: 20px;
@@ -79,7 +79,7 @@ input[type=text], [type=email]{
     padding: 10px 20px;
     margin: 8px 0;
     border: none;
-    border: 1px solid #6be1ff;
+    border: 1px solid #c6cb7a;
     outline: none;
 }
 
@@ -93,13 +93,13 @@ textarea{
     height: 100px;
     background-color: #fff;
     padding: 10px 20px;
-    border: 1px solid #6be1ff;
+    border: 1px solid #c6cb7a;
     resize: vertical;
     outline: none;
 }
 
 .clause-info{
-    font-family: 'Inconsolata', sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     font-weight: 200;
     color: #313131;
     font-size: 15px;
@@ -116,7 +116,7 @@ textarea{
 }
 
 input[type="submit"]{
-    background-color: #6be1ff;
+    background-color: #c6cb7a;
     padding: 12px;
     border: none;
     outline: none;
