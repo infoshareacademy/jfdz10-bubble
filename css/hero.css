@@ -4,7 +4,7 @@
 
 .background {
     background: url('./../images/streetball1.jpg');
-    background-size: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 85vh;
     width: 100vw;    
@@ -28,11 +28,13 @@ h1 {
     background-color: #ffffff;  
 }
 
-h2 {
+.slogan h2 {
     font-family:'Comfortaa', cursive;
     font-size: 6vh;
     font-weight: 300;
     color: #ffffff;
+    margin: 5px;
+    text-align: right;
 }
 
 .apply-button {
@@ -41,20 +43,20 @@ h2 {
     margin-top: 10vh;  
 }
 
-.slogan h2 {
-    margin: 5px;
-    text-align: right;
-}
+.round-button a {
+    color: #ffffff;
+    font-size: 30px;
+    font-family:'Comfortaa', cursive;
+ }
 
-.round-button {
+.round-button  {
     color: #ffffff;
     background-color: Transparent;
     border-radius: 50%;
-    font-family:'Comfortaa', cursive;
+    
     transition: 0.5s all ease-in-out;
-    height: 160px;
-    width: 160px;
-    font-size: 20px;
+    height: vw;
+    width: vw;
     border: 3px solid #ffffff;
 }
 .round-button:hover{
@@ -69,25 +71,30 @@ h2 {
 @media screen and (max-width: 1700px){
 
     .welcome-container {
-        padding-top: 15vw;
+        padding-top: 10vw;
     }
     
     h1 {
         font-size: 4vw;  
     }
     
-    h2 {
-        font-size: 3.5vw;   
+    .slogan h2 {
+        font-size: 4vw;   
     }
     
     .apply-button {
         margin-top: 8vw;  
     }
     
+    .round-button a {
+        color: #ffffff;
+        font-size: 20px;
+        font-family:'Comfortaa', cursive;
+    }
+
     .round-button {
-        height: 160px;
-        width: 160px;
-        font-size: 24px;
+        height: 10vw;
+        width: 10vw;
         border: 3px solid #ffffff;
     }
 }
@@ -95,37 +102,53 @@ h2 {
 @media screen and (max-width: 1050px){
 
     .welcome-container {
-        padding-top: 12vw;
+        padding-top: 5vw;
     }
     
     h1 {
-        font-size: 4vw;  
+        font-size: 5vw;  
     }
     
-    h2 {
-        font-size: 3.5vw;   
+    .slogan h2 {
+        font-size: 4vw;   
     }
     
     .apply-button {
         margin-top: 5vw;  
     }
     
-    .round-button {
-        height: 120px;
-        width: 120px;
+    .round-button a {
         font-size: 18px;
-        border: 2px solid #ffffff;
-    }
-}
-@media screen and (max-width: 770px){
+    }   
+
     .round-button {
-        height: 80px;
-        width: 80px;
-        font-size: 10px;
+        height: 13vw;
+        width: 13vw;
         border: 2px solid #ffffff;
     }
 }
 
+
+@media screen and (max-width: 770px){
+    
+    .welcome-container {
+        padding-top: 10vw;
+    }
+
+    .round-button a {
+        font-size: 20px;
+     }
+    
+    .round-button {
+        height: 15vw;
+        width: 15vw;
+        border: 2px solid #ffffff;
+    }
+    
+    .apply-button {
+    margin-top: 5vw;  
+    }
+}
 @media screen and (max-width: 450px){
 
     .welcome-container {
@@ -133,21 +156,24 @@ h2 {
     }
     
     h1 {
-        font-size: 4vw;  
+        font-size: 5vh;  
     }
     
-    h2 {
-        font-size: 3.5vw;   
+    .slogan h2 {
+        font-size: 10vw;   
     }
     
     .apply-button {
-        margin-top: 5vw;  
+        margin-top: 30vh;  
     }
     
+    .round-button a {
+        font-size: 20px;
+     }
+
     .round-button {
-        height: 50px;
-        width: 50px;
-        font-size: 6px;
+        height: 15vh;
+        width: 15vh;
         border: 1.5px solid #ffffff;
     }
 }
