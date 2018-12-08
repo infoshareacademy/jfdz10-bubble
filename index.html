@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <html lang="en">
     <title>Bubble Project - Playground</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" media="screen" href="css/navigation.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="./css/reset.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/main.css" />
+    <link rel="stylesheet" media="screen" href="css/navigation.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/hero.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/team.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/basic-functionalities.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/advanced-functionalities.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="/css/newsletter.css" />
-    <link rel="stylesheet" type="text/css" media="screen" href="./css/to-top.css" />    
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/to-top.css" />
     <script type="text/javascript" src="./js/to-top.js"></script>
     <script type="text/javascript" src="./js/smooth-scrolling.js"></script>
 </head>
@@ -23,19 +23,37 @@
 <body>
     <section id="navigation" class="navigation">
         <div class="navigation__container">
-        <div class="navigation__logo">
-            <img src="images/logo.png" alt="logo" class="logo">
+            <div class="navigation__logo">
+                <img src="images/logo.png" alt="logo" class="logo">
+            </div>
+            <div class="navigation__menu">
+                <div class="navigation__menu__item menu__item__introduction"><a href="#hero">Introduction</a></div>
+                <div class="navigation__menu__item menu__item__funcionalities"><a href="#basic-functionalities">Functionalities</a></div>
+                <div class="navigation__menu__item menu__item__team"><a href="#team">Team</a></div>
+                <div class="navigation__menu__item menu__item__advanced-functionalities"><a href="#advanced-functionalities">More</a></div>
+                <div class="navigation__menu__item menu__item__newsletter"><a href="#newsletter">Newsletter</a></div>
+            </div>
         </div>
-        <div class="navigation__menu">
-            <div class="navigation__menu__item menu__item__introduction"><a href="#hero">Introduction</a></div>
-            <div class="navigation__menu__item menu__item__funcionalities"><a href="#basic-functionalities">Functionalities</a></div>
-            <div class="navigation__menu__item menu__item__team"><a href="#team">Team</a></div>
-            <div class="navigation__menu__item menu__item__advanced-functionalities"><a href="#advanced-functionalities">More</a></div>
-            <div class="navigation__menu__item menu__item__newsletter"><a href="#newsletter">Newsletter</a></div>  
-        </div>
-    </div>
     </section>
-    <section id="hero"></section>
+    <section id="hero">
+        <div class="hero-container">
+            <div class="background">
+                <div class="welcome-container">
+                    <div class="slogan">
+                        <h2>anytime anywhere,</h2>
+                        <h2>time to</h2>
+                    </div>
+                    <div class="title">
+                        <h1>join playground</h1>
+                    </div>
+                    <div class="apply-button">
+                        <button class="round-button"><a href="#newsletter">apply now</a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
     <section id="basic-functionalities">
         <h1 class="basic-functionalities__header">What will you get?</h1>
         <div class="basic-functionalities">
@@ -69,7 +87,8 @@
             <div class="team__mate">
                 <div class="team__mate__photo"><img src="./images/borys.jpg" alt="" class="team__mate_photo__photo">
                     <div class="team__mate__desc">
-                        <h2 class="team__mate__desc__header">Borys Synowec</h2><span class="team__mate__desc__info">Architekt Lorem
+                        <h2 class="team__mate__desc__header">Borys Synowec</h2><span class="team__mate__desc__info">Architekt
+                            Lorem
                             ipsum.</span>
                         <div class="team__mate__social">
                             <a href="https://www.linkedin.com/in/borys-synowe%C4%87-3747018b/" target="_blank">
@@ -122,7 +141,8 @@
             <div class="team__mate">
                 <div class="team__mate__photo"><img src="./images/kasia.jpg" alt="" class="team__mate_photo__photo">
                     <div class="team__mate__desc">
-                        <h2 class="team__mate__desc__header">Kasia Olenycz</h2><span class="team__mate__desc__info">Knit the knits, purl the purls.</span>
+                        <h2 class="team__mate__desc__header">Kasia Olenycz</h2><span class="team__mate__desc__info">Knit
+                            the knits, purl the purls.</span>
                         <div class="team__mate__social">
                             <a href="https://www.linkedin.com/in/katarzyna-olenycz/" target="_blank">
                                 <div class="team__mate__social__link__ln team__mate__social__link"></div>
@@ -142,37 +162,47 @@
         <div class="advanced-functionalities">
             <div class="advanced-functionalities__functionality__container">
                 <div class="advanced-functionalities__functionality advanced-functionalities__functionality__step1">
-                    <h2 class="advanced-functionalities__functionality__text">Create an account on Playground, add your location, sports you like and a short description of yourself.</h2>
+                    <h2 class="advanced-functionalities__functionality__text">Create an account on Playground, add your
+                        location, sports you like and a short description of yourself.</h2>
                 </div>
             </div>
             <div class="advanced-functionalities__functionality__container">
                 <div class="advanced-functionalities__functionality advanced-functionalities__functionality__team">
-                    <h2 class="advanced-functionalities__functionality__text">Create a group and add other users to your own team!</h2>
+                    <h2 class="advanced-functionalities__functionality__text">Create a group and add other users to
+                        your own team!</h2>
                 </div>
             </div>
             <div class="advanced-functionalities__functionality__container">
                 <div class="advanced-functionalities__functionality advanced-functionalities__functionality__open">
-                    <h2 class="advanced-functionalities__functionality__text">If you don't have buddies to play with, join an open group that's looking for players.</h2>
+                    <h2 class="advanced-functionalities__functionality__text">If you don't have buddies to play with,
+                        join an open group that's looking for players.</h2>
                 </div>
             </div>
             <div class="advanced-functionalities__functionality__container">
                 <div class="advanced-functionalities__functionality advanced-functionalities__functionality__sports">
-                    <h2 class="advanced-functionalities__functionality__text">Choose between different sports. Whether you like football, basketball, darts or chess, you can find it all here!</h2>
+                    <h2 class="advanced-functionalities__functionality__text">Choose between different sports. Whether
+                        you like football, basketball, darts or chess, you can find it all here!</h2>
                 </div>
             </div>
             <div class="advanced-functionalities__functionality__container">
                 <div class="advanced-functionalities__functionality advanced-functionalities__functionality__map">
-                    <h2 class="advanced-functionalities__functionality__text">Check the map to find the nearest open field, chessboard or racing track. You can see opinions and the place's rules and decide if you like it.</h2>
+                    <h2 class="advanced-functionalities__functionality__text">Check the map to find the nearest open
+                        field, chessboard or racing track. You can see opinions and the place's rules and decide if you
+                        like it.</h2>
                 </div>
             </div>
             <div class="advanced-functionalities__functionality__container">
                 <div class="advanced-functionalities__functionality advanced-functionalities__functionality__lucky">
-                    <h2 class="advanced-functionalities__functionality__text">Feeling lucky? Not sure about which sport you want to try? Just use the "I feel like sports!" button and see what's happening around you right now.</h2>
+                    <h2 class="advanced-functionalities__functionality__text">Feeling lucky? Not sure about which sport
+                        you want to try? Just use the "I feel like sports!" button and see what's happening around you
+                        right now.</h2>
                 </div>
             </div>
             <div class="advanced-functionalities__functionality__container">
                 <div class="advanced-functionalities__functionality advanced-functionalities__functionality__comment">
-                    <h2 class="advanced-functionalities__functionality__text">If you want to compliment someone's play or someone notoriously doesn't show up on time, let everybody know by commenting under their profile.</h2>
+                    <h2 class="advanced-functionalities__functionality__text">If you want to compliment someone's play
+                        or someone notoriously doesn't show up on time, let everybody know by commenting under their
+                        profile.</h2>
                 </div>
             </div>
             <div class="advanced-functionalities__functionality__container">
@@ -183,34 +213,43 @@
         </div>
     </section>
     <section id="newsletter">
-        <h1 class="form-title">If you want to get more information about the product release contact us in any way that suits you.*</h1>
+        <h1 class="form-title">If you want to get more information about the product release contact us in any way that
+            suits you.*</h1>
         <div class="contact">
-            <div class="info"><p>Address: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p></div>
-            <div class="info"><p class="phone">111 222 333</p></div>
+            <div class="info">
+                <p>Address: Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            </div>
+            <div class="info">
+                <p class="phone">111 222 333</p>
+            </div>
             <div class="info"><a href="http://www.bubble.jfdz10.is-academy.pl/">bubble.jfdz10.is-academy.pl</a></div>
         </div>
         <form class="form-flex">
-            <div class="description"><p>Your name</p></div>
+            <div class="description">
+                <p>Your name</p>
+            </div>
             <div class="text-box"><input type="text" name="first-name" required title="Your name..."></div>
-            <div class="description"><p>Your email</p></div>
+            <div class="description">
+                <p>Your email</p>
+            </div>
             <div class="text-box"><input type="email" name="email" required title="Your email..."></div>
-            <div class="description"><p>Your message</p></div>
+            <div class="description">
+                <p>Your message</p>
+            </div>
             <div class="textarea"><textarea name="message" placeholder="optional"></textarea></div>
             <div class="button"><input type="submit" value="Send Message"></div>
             <div class="clause-info">
                 <p>*In response, one email will be sent with information about the product release.</p>
                 <p>The personal data received will not be used for any other purpose and will not be given to anyone.</p>
             </div>
-             
         </form>
-
-
+        
     </section>
     <section id="footer"></section>
     <section id="to-top">
         <div class="to-top"><a href="#" class="to-top__link"></a></div>
     </section>
-    
+
 </body>
 
 </html>
