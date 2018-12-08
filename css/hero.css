@@ -51,6 +51,7 @@
     color: #ffffff;
     font-size: 30px;
     font-family:'Comfortaa', cursive;
+    text-shadow: -1px 0 #31313141, 0 1px #31313141, 1px 0 #31313141, 0 -1px #31313141;
  }
 
 .round-button  {

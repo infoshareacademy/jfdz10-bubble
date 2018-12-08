@@ -14,7 +14,7 @@
 
 .basic-functionalities {   
     box-sizing: border-box; 
-    margin: 80px auto;  
+    margin: 40px auto;  
     display:flex;
     flex-wrap: wrap;
     align-items: center;
