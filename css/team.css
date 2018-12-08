@@ -1,8 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Inconsolata');
-
-#team > * {
-    margin: 0 auto;
-}
 
 .team__meet {
     margin: 40px  auto 10px auto;       
@@ -14,7 +9,7 @@
     color: #313131;
     font-family:'Comfortaa', sans-serif;
     font-weight: 200;
-    font-size: 6vh;
+    font-size: 4.5vw;
 }
 
 .team {   
@@ -136,6 +131,7 @@
     .team__mate {  
         flex-basis: 70%;             
         max-height: 60vh;
+        margin: 10px;
     }
 
     .team__mate__desc__header {
@@ -148,10 +144,14 @@
 }
 
 @media only screen and (max-width: 320px) {
-    
+
+    .team__meet {
+        margin: 5px  auto 0px auto;  
+    }    
 
     .team__mate {        
-        flex-basis: 90%;                     
+        flex-basis: 90%;  
+        margin: 5px;                   
     }
 
     .team__mate__desc__header {
