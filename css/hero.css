@@ -7,7 +7,11 @@
     background-size: cover;
     background-repeat: no-repeat;
     height: 85vh;
-    width: 100vw;    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
 }   
 
 .welcome-container {
@@ -18,7 +22,7 @@
     padding-top: 25vh;
 }
 
-h1 {
+.title h1 {
     font-family: 'Roboto', sans-serif;
     font-size: 7vh;
     font-weight: 200;
@@ -53,10 +57,10 @@ h1 {
     color: #ffffff;
     background-color: Transparent;
     border-radius: 50%;
-    
+    cursor: pointer;
     transition: 0.5s all ease-in-out;
-    height: vw;
-    width: vw;
+    height: 10vw;
+    width: 10vw;
     border: 3px solid #ffffff;
 }
 .round-button:hover{
@@ -74,7 +78,7 @@ h1 {
         padding-top: 10vw;
     }
     
-    h1 {
+    .title h1 {
         font-size: 4vw;  
     }
     
@@ -91,12 +95,6 @@ h1 {
         font-size: 20px;
         font-family:'Comfortaa', cursive;
     }
-
-    .round-button {
-        height: 10vw;
-        width: 10vw;
-        border: 3px solid #ffffff;
-    }
 }
 
 @media screen and (max-width: 1050px){
@@ -105,7 +103,7 @@ h1 {
         padding-top: 5vw;
     }
     
-    h1 {
+    .title h1 {
         font-size: 5vw;  
     }
     
@@ -155,7 +153,7 @@ h1 {
         padding-top: 12vw;
     }
     
-    h1 {
+    .title h1 {
         font-size: 5vh;  
     }
     
