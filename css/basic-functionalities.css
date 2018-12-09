@@ -8,13 +8,13 @@
     color: #313131;
     font-family:'Comfortaa', sans-serif;
     font-weight: 200;
-    font-size: 6vh;
+    font-size: 4.5vw;
 }
 
 
 .basic-functionalities {   
     box-sizing: border-box; 
-    margin: 80px auto;  
+    margin: 40px auto;  
     display:flex;
     flex-wrap: wrap;
     align-items: center;
@@ -91,13 +91,17 @@
 /* ****************** MEDIA QUERIES ******************** */
 
 @media only screen and (min-width: 400px) and (max-width: 768px)  {
+    .basic-functionalities__header {
+        margin: 20px  auto 0px auto;  
+    }
+
     .basic-functionalities__functionality__container {
         flex-basis: 50%;  
         max-height: 50vh;
     }
 
     .basic-functionalities {   
-        margin: 40px auto; 
+        margin: 10px auto; 
     }
 
     .team__mate__desc__header {
@@ -112,13 +116,17 @@
 
 
 @media only screen and (max-width: 400px) {
+    .basic-functionalities__header {
+        margin: 10px  auto 0px auto;  
+    }
+
     .basic-functionalities__functionality__container {
         flex-basis: 100%;  
         max-height: 45vh;
     }
 
     .basic-functionalities { 
-        margin: 20px 0;          
+        margin: 5px 0;          
     }
     .basic-functionalities__functionality__text {
         font-size: 6.5vw;
