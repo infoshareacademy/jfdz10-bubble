@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="./css/game.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/ranking.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/ball.css" />
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 </head>
 
@@ -16,12 +18,16 @@
     <div class="game">
         <div class="goalie__container">
             <div id="goalie"></div>
+
         </div>
+        <div id="strength-bar"></div>
+        <div id="ball"></div>
         <ul id="scores" class="scores-hidden">
             <div class="scores-visible-trophy">
-            </ul>    
+        </ul>
     </div>
     <script src='./js/open-game.js'></script>
     <script src='./js/goalie.js'></script>
-    <script type="text/javascript" src="./js/points.js"></script>
+    <script src="./js/points.js"></script>
+    <script src="./js/kick-strength.js"></script>
 </body>
