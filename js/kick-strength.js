@@ -1,28 +1,48 @@
+var strengthPointer = document.querySelector('#strength-bar-pointer');
 
-// function move() {
-//     var elem = document.getElementById("myBar");
-//       if (width < 100) {
-//         width+=10;
-//         elem.style.width = width + '%';
-//         elem.innerHTML = width * 1 + '%';
-//       } 
-//   }
+function strengthBar() {
 
+    strengthPointerRight();
 
-var strength = 0;
-var strengthBar = document.querySelector('#strength-bar');
+    function strengthPointerRight() {
+        var interval = setInterval(function () {
+            strengthPointer.style.left = `${strengthPointer.offsetLeft + 2}px`;
 
-function kickStrength() {
+            document.addEventListener("keydown", function (event) {
+                if (event.which === 32) {
+                    clearInterval(interval);
+                    var strength =  strengthPointer.style.left;
+                    return strength;
+                }
+            });
+            
 
-    document.addEventListener("keydown", function (event) {
-        if (event.which === 32) {
-            start = new Date();
-            strength += 1;
-        }
-        strengthBar.style.width = `${strength}px`;
-        console.log(strength);
-    });
+            if (strengthPointer.style.left === '300px') {
+                clearInterval(interval);
+                strengthPointerLeft();
+            }
+        }, 0);
+    }
 
+    function strengthPointerLeft() {
+        var interval = setInterval(function () {
+            strengthPointer.style.left = `${strengthPointer.offsetLeft - 2}px`;
+
+            document.addEventListener("keydown", function (event) {
+                if (event.which === 32) {
+                    clearInterval(interval);
+                    var strength =  strengthPointer.style.left;
+                    return strength;
+                }
+            });
+            
+
+            if (strengthPointer.style.left === '0px') {
+                clearInterval(interval);
+                strengthPointerRight();
+            }
+        }, 0);
+    };
 }
 
-kickStrength();
+strengthBar();
