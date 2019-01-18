@@ -1,48 +1,42 @@
 var strengthPointer = document.querySelector('#strength-bar-pointer');
 
-function strengthBar() {
+function captureStrength() {
 
-    strengthPointerRight();
+    strengthPointerToBottom();
 
-    function strengthPointerRight() {
+    function strengthPointerToBottom() {
         var interval = setInterval(function () {
-            strengthPointer.style.left = `${strengthPointer.offsetLeft + 2}px`;
+            strengthPointer.style.top = `${strengthPointer.offsetTop + 2}px`;
 
             document.addEventListener("keydown", function (event) {
-                if (event.which === 32) {
+                if (event.key === 's') {
                     clearInterval(interval);
-                    var strength =  strengthPointer.style.left;
-                    return strength;
                 }
             });
-            
 
-            if (strengthPointer.style.left === '300px') {
+            if (strengthPointer.style.top === '300px') {
                 clearInterval(interval);
-                strengthPointerLeft();
+                strengthPointerToTop();
             }
         }, 0);
     }
 
-    function strengthPointerLeft() {
+    function strengthPointerToTop() {
         var interval = setInterval(function () {
-            strengthPointer.style.left = `${strengthPointer.offsetLeft - 2}px`;
+            strengthPointer.style.top = `${strengthPointer.offsetTop - 2}px`;
 
             document.addEventListener("keydown", function (event) {
-                if (event.which === 32) {
+                if (event.key === 's') {
                     clearInterval(interval);
-                    var strength =  strengthPointer.style.left;
-                    return strength;
                 }
             });
-            
 
-            if (strengthPointer.style.left === '0px') {
+            if (strengthPointer.style.top === '0px') {
                 clearInterval(interval);
-                strengthPointerRight();
+                strengthPointerToBottom();
             }
         }, 0);
     };
 }
 
-strengthBar();
+captureStrength();

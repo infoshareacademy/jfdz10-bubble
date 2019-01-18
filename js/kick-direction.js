@@ -1,46 +1,44 @@
-// var strengthPointer = document.querySelector('#strength-bar-pointer');
+var directionPointer = document.querySelector('#direction-bar-pointer');
 
-// function strengthBar() {
+function captureDirection() {
 
-//     strengthPointerRight();
+    directionPointerRight();
 
-//     function strengthPointerRight() {
-//         var interval = setInterval(function () {
-//             strengthPointer.style.left = `${strengthPointer.offsetLeft + 2}px`;
+    function directionPointerRight() {
+        var interval = setInterval(function () {
+            directionPointer.style.left = `${directionPointer.offsetLeft + 2}px`;
 
-//             document.addEventListener("keydown", function (event) {
-//                 if (event.which === 32) {
-//                     clearInterval(interval);
-//                     var strength =  strengthPointer.style.left;
-//                     return strength;
-//                 }
-//             });
-            
+            document.addEventListener("keydown", function (event) {
+                if (event.key === 'a') {
+                    clearInterval(interval);
+                }
+            });
 
-//             if (strengthPointer.style.left === '300px') {
-//                 clearInterval(interval);
-//                 strengthPointerLeft();
-//             }
-//         }, 0);
-//     }
 
-//     function strengthPointerLeft() {
-//         var interval = setInterval(function () {
-//             strengthPointer.style.left = `${strengthPointer.offsetLeft - 2}px`;
+            if (directionPointer.style.left === '300px') {
+                clearInterval(interval);
+                directionPointerLeft();
+            }
+        }, 0);
+    }
 
-//             document.addEventListener("keydown", function (event) {
-//                 if (event.which === 32) {
-//                     clearInterval(interval);
-//                     var strength =  strengthPointer.style.left;
-//                     return strength;
-//                 }
-//             });
-            
+    function directionPointerLeft() {
+        var interval = setInterval(function () {
+            directionPointer.style.left = `${directionPointer.offsetLeft - 2}px`;
 
-//             if (strengthPointer.style.left === '0px') {
-//                 clearInterval(interval);
-//                 strengthPointerRight();
-//             }
-//         }, 0);
-//     };
-// }
+            document.addEventListener("keydown", function (event) {
+                if (event.key === 'a') {
+                    clearInterval(interval);
+                }
+            });
+
+
+            if (directionPointer.style.left === '0px') {
+                clearInterval(interval);
+                directionPointerRight();
+            }
+        }, 0);
+    };
+}
+
+captureDirection();
