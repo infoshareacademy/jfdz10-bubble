@@ -10,7 +10,7 @@ function captureStrength() {
 
             document.addEventListener("keydown", function (event) {
                 if (event.key === 's') {
-                    clearInterval(interval);
+                    clearInterval(interval);                    
                 }
             });
 
@@ -27,7 +27,7 @@ function captureStrength() {
 
             document.addEventListener("keydown", function (event) {
                 if (event.key === 's') {
-                    clearInterval(interval);
+                    clearInterval(interval);                    
                 }
             });
 

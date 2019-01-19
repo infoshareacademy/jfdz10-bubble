@@ -6,7 +6,8 @@
     position: absolute;
     left: 50%;
     top: 70%;
-    transform: (-50%, -70%)
+    transform: (-50%, -70%);
+    transition: all 2s;
 }
 
 #direction-bar {

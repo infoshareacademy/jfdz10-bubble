@@ -1,6 +1,7 @@
-var directionPointer = document.querySelector('#direction-bar-pointer');
+
 
 function captureDirection() {
+    var directionPointer = document.querySelector('#direction-bar-pointer');
 
     directionPointerRight();
 
@@ -42,3 +43,6 @@ function captureDirection() {
 }
 
 captureDirection();
+
+
+
