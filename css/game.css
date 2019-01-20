@@ -22,3 +22,13 @@ body {
     top: 340px;
     left: 350px;
 }
+
+.current__score__container {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+    padding: 15px;
+}
+.current__score, .tries {
+    font-size: 2em;
+}
