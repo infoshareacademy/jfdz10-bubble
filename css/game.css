@@ -1,0 +1,13 @@
+.game {
+    background-image: url(/images/penaltyArea.png);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.goalie {
+    background-image: url(/images/goalkeeper.png);
+    background-repeat:no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
