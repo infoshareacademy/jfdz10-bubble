@@ -32,27 +32,34 @@
     background-color: #ffffff;  
 }
 .slogan-container {
-    position: relative; 
-    height: 70px;
+    position: relative;
+    height: 82px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
 }
 
 .slogan {
-    position: absolute; 
+    position: absolute;
     width: 100%;
-    transition: opacity .3s ease-in-out;
+    transition: opacity .3s ease-out;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .slogan h2 {
-    position: absolute;
-    font-family:'Comfortaa', cursive;
-    font-size: 6vh;
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
     font-weight: 300;
     color: #ffffff;
     margin: 5px;
-    text-align: right;
+    text-align: right
 }
 
-.slogan h2+h2 {
+.slogan:nth-of-type(2), .slogan:nth-of-type(3) {
     opacity: 0;
 }
 
@@ -166,7 +173,7 @@
     }
     
     .slogan h2 {
-        font-size: 4vw;   
+        font-size: 20px;   
     }
     
     .apply-button {
@@ -191,7 +198,7 @@
     }
     
     .slogan h2 {
-        font-size: 4vw;   
+        font-size: 20px;   
     }
     
     .apply-button {

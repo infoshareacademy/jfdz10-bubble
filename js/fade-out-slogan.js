@@ -11,3 +11,5 @@ current = 0;
 }
 slides[current].style.opacity =1;
 }, 3000);
+
+
