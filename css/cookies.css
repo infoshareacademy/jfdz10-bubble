@@ -5,3 +5,9 @@
     height: 70px;
     /*position: fixed;*/
 }
+
+#close-cookies-btn{
+    
+    border: none;
+    border-radius: 12px; 
+}
