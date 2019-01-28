@@ -20,6 +20,10 @@
     <script type="text/javascript" src="./js/to-top.js"></script>
     <script type="text/javascript" src="./js/smooth-scrolling.js"></script>
     
+    <link rel="icon" type="image/png" sizes="16x16" href=images/favicon.png>
+    <script type="text/javascript" src="./js/to-top.js"></script>
+    <script type="text/javascript" src="./js/smooth-scrolling.js"></script>
+    <script type="text/javascript" src="./js/open-game.js"></script>
 </head>
 <body>
     <section id="navigation" class="navigation">
@@ -225,7 +229,7 @@
             </div>
             <div class="info"><a href="http://www.bubble.jfdz10.is-academy.pl/">bubble.jfdz10.is-academy.pl</a></div>
         </div>
-        <form class="form-flex">
+        <form class="form-flex" onsubmit="openWin()">
             <div class="description">
                 <p>Your name</p>
             </div>
@@ -238,7 +242,7 @@
                 <p>Your message</p>
             </div>
             <div class="textarea"><textarea name="message" placeholder="optional"></textarea></div>
-            <div class="button"><input type="submit" value="Send Message"></div>
+            <div class="button" ><input type="submit" value="Send Message"></div>
             <div class="clause-info">
                 <p>*In response, one email will be sent with information about the product release.</p>
                 <p>The personal data received will not be used for any other purpose and will not be given to anyone.</p>

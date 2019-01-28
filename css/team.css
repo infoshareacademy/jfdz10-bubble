@@ -14,7 +14,7 @@
 
 .team {   
     box-sizing: border-box; 
-    margin: 0 auto;  
+    margin: 40px auto;  
     display:flex;
     flex-wrap: wrap;
     justify-content: center; 
