@@ -11,4 +11,4 @@ function setCookie() {
     container.style.display = 'none';
   }
 
-  closeBtn.addEventListener('click', setCookie)
+  closeBtn.addEventListener('click', setCookie);
