@@ -15,11 +15,15 @@ function getStrength() {
     return strengthMultiplied;
 }
 
+
+
 function kickTheBall() {
     addEventListener('keydown', event => {
         if (event.code === 'KeyD') {
             ball.style.top = `${getStrength()}px`;
             ball.style.left = `${getDirection()}px`;
+            // ball.style.height = `40px`;
+            // ball.style.width = `40px`;
         }
     })
 }

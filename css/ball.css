@@ -5,8 +5,8 @@
     background-color: black;
     position: absolute;
     left: 50%;
-    top: 70%;
-    transform: (-50%, -70%);
+    bottom: 35px;
+    transform: translate(-50%, -35px);
     transition: all 2s;
 }
 
