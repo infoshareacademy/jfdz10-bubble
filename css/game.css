@@ -2,15 +2,23 @@ body {
     font-family: 'Orbitron', sans-serif;
 }
 
+.game-container {      
+    height: 530px;
+    width: 900px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
 
 .game {
-    height: 750px;
-    width: 900px;
+    height: 100%;
+    width: 100%;
     position: relative;
-    margin: 0 auto;
+    margin: auto auto;
     background: url(/images/penaltyArea.png);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: center; 
     background-size: inherit;
     
