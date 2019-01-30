@@ -11,38 +11,41 @@
     transition: all 2s;
 }
 
-#direction-bar {
+.bar {
     position: absolute;
+    background-color: transparent;
+    border: 2px solid brown;
+    border-radius: 2px;
+}
+
+#direction-bar {
     top: 20px;
     left: 20px;
     height: 20px;
     width: 300px;
-    background-color: transparent;
-    border: 1px solid brown;
+    
 }
 
-#direction-bar-pointer {
-    height: 20px;
-    width: 5px;
-    background-color: green;
-    position: absolute;
-    left: 50px;
-}
-
-#strength-bar {
-    position: absolute;
+#strength-bar {    
     top: 60px;
     left: 20px;
     height: 300px;
     width: 20px;
-    background-color: transparent;
-    border: 1px solid brown;
+}
+
+.pointer {
+    background-color: green;
+    position: absolute;
+}
+
+#direction-bar-pointer {
+    height: 20px;
+    width: 5px;    
+    left: 50px;
 }
 
 #strength-bar-pointer {
     height: 5px;
     width: 20px;
-    background-color: green;
-    position: absolute;
     top: 0px;
 }

@@ -33,7 +33,7 @@ function captureDirection() {
                 }
             });
 
-
+            
             if (directionPointer.style.left === '0px') {
                 clearInterval(interval);
                 directionPointerRight();
@@ -43,6 +43,8 @@ function captureDirection() {
 }
 
 captureDirection();
+
+
 
 
 
