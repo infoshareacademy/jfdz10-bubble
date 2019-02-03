@@ -57,4 +57,4 @@ function showLesScores() {
 // saveScoresInLocalStorage('Bartek', 29);
 // saveScoresInLocalStorage('Niklas', 3);
 // saveScoresInLocalStorage('Roman Hoffer', 67);
-generateScoresAsNodeList();
+// generateScoresAsNodeList();
