@@ -1,4 +1,6 @@
 
+captureDirection();
+startCapturingStrength()
 
 function captureDirection() {
     var directionPointer = document.querySelector('#direction-bar-pointer');
@@ -42,7 +44,17 @@ function captureDirection() {
     };
 }
 
-captureDirection();
+
+function startCapturingStrength() {
+    document.addEventListener("keyup", function (event) {
+        if (event.key === 'a') {
+            captureStrength();
+        }
+    });
+}
+
+
+
 
 
 
