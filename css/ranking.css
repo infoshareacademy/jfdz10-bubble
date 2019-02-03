@@ -1,6 +1,7 @@
 
 .scores-hidden {
-    display: none
+    display: none;
+    overflow: hidden;
 }
 
 .scores-visible {
@@ -28,18 +29,32 @@
     text-transform: uppercase;
     font-weight: bold;
     margin: 0;
-    transition: all 2s;
+    transition: all 1s;
 }
 
-.scores-visible-trophy {
+[class^="scores-visible-trophy"] {
     background-image: url(../images/trophy.png);
     background-size: cover;
-    width: 150px;
-    height: 150px;
     position: absolute;
     left: 50%;
-    top: -130px;
     transform: translateX(-50%);
+}
+
+.scores-visible-trophy-less {    
+    width: 150px;
+    height: 150px;    
+    top: -130px;
+    
+}
+
+.scores-visible-trophy-more {    
+    width: 70px;
+    height: 70px;
+    top: -40px;
+}
+
+.more-scores {
+    font-size: 1.2em;
 }
 
 .scores-show-more, .scores-show-less {
@@ -58,4 +73,14 @@
     left: 50%;
     bottom: -30px;
     transform: translateX(-50%);
+}
+
+
+.scores-close {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    transform: translate(-5px, -5px);
+    font-size: 10px;
+    cursor: pointer;
 }

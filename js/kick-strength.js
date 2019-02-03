@@ -1,6 +1,9 @@
-var strengthPointer = document.querySelector('#strength-bar-pointer');
+
+
+readyToKickTheBall();
 
 function captureStrength() {
+    var strengthPointer = document.querySelector('#strength-bar-pointer');
 
     strengthPointerToBottom();
 
@@ -10,7 +13,7 @@ function captureStrength() {
 
             document.addEventListener("keydown", function (event) {
                 if (event.key === 's') {
-                    clearInterval(interval);                    
+                    clearInterval(interval);
                 }
             });
 
@@ -27,7 +30,7 @@ function captureStrength() {
 
             document.addEventListener("keydown", function (event) {
                 if (event.key === 's') {
-                    clearInterval(interval);                    
+                    clearInterval(interval);
                 }
             });
 
@@ -39,5 +42,13 @@ function captureStrength() {
     };
 }
 
-captureStrength();
+function readyToKickTheBall() {
+    document.addEventListener("keyup", function (event) {
+        if (event.key === 's') {
+            kickTheBall();
+        }
+    });
+}
+
+
 

@@ -1,7 +1,7 @@
 function getDirection() {
     let direction = document.querySelector('#direction-bar-pointer');
     let directionNumber = parseFloat(direction.style.left);
-    let directionMultiplied = directionNumber;
+    let directionMultiplied = directionNumber * 2;
 
     return directionMultiplied;
 }
@@ -24,7 +24,7 @@ function establishNewDirection() {
         directionPosition = 'left'
     }
     if (directionNumber >= 150) {
-         directionPosition = 'right'
+        directionPosition = 'right'
     }
     return directionPosition;
 }
@@ -32,11 +32,12 @@ function establishNewDirection() {
 
 
 function kickTheBall() {
+    var ball = document.querySelector('#ball');
     addEventListener('keydown', event => {
         if (event.code === 'KeyD') {
             ball.style.top = `${getStrength()}px`;
             if (establishNewDirection() === 'left') {
-                ball.style.left = `${(getDirection() * 2)}px`;
+                ball.style.left = `${(getDirection())}px`;
             } else if (establishNewDirection() === 'right') {
                 ball.style.left = `${(getDirection()) + 300}px`;
             }
@@ -46,4 +47,6 @@ function kickTheBall() {
     })
 }
 
-kickTheBall() 
+
+
+
