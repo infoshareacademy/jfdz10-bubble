@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./css/game.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/ranking.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./css/ball.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/lives.css" />
     <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 </head>
 
@@ -27,6 +28,11 @@
             <div class="scores-close" onclick="closeScores()">X</div>
             <div class="scores-visible-trophy-less"></div>
         </ul>
+        <div id="lives-bar" class="bar">
+            <div class="first-live"></div>
+            <div class="second-live"></div>
+            <div class="third-live"></div>
+        </div>
     </div>
 </div>
     <script src='./js/open-game.js'></script>
@@ -37,4 +43,5 @@
     <script src="./js/kickTheBall.js"></script>
     <script src="./js/goal-or-miss.js"></script>
     <script src="./js/reset-game.js"></script>
+    <script src="./js/lives.js"></script>
 </body>

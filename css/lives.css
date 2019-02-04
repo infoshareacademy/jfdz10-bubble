@@ -1,0 +1,23 @@
+#lives-bar{
+    top: 20px;
+    right: 20px;
+    height: 20px;
+    width: 60px;
+    display: flex;
+}
+
+.first-live{
+   width: 20px;
+    background-color: green;
+}
+
+.second-live{
+    width: 20px;
+     background-color: green;
+ }
+
+.third-live{
+    width: 20px;
+     background-color: green;
+ 
+ }
