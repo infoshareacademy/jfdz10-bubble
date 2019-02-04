@@ -6,7 +6,7 @@ function setCookie() {
     var expirationDateInMS = 30*24*60*60*1000; 
     now.setTime(now.getTime() + expirationDateInMS);
     var expires = 'expires=' + now.toUTCString();
-    document.cookie = 'expiration=' + expires;
+    document.cookie = "expiration=true " + expires;
 
     container.style.display = 'none';
   }
@@ -19,8 +19,8 @@ function setCookie() {
     return document.cookie.includes('expiration');
   }
 
-  if (!cookieExists()) {
-    container.style.display = 'block';
+  if (cookieExists()) {
+    container.style.display = 'none';
     
  }
 
