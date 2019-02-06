@@ -44,3 +44,12 @@ body {
     background-position: center;
     background-size: cover;
 }
+
+.current__score__container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.current__score, .tries {
+    font-size: 2em;
+}
