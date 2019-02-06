@@ -1,10 +1,10 @@
 function goalieMovement() {
-    var goalie = document.getElementById('goalie');
+    var goalie = document.getElementById('goalie__container');
     right();
    function right(){
     var interval = setInterval(function() {
       goalie.style.left = goalie.offsetLeft + 2 + 'px'
-      if (goalie.style.left === '880px'){
+      if (goalie.style.left === '600px'){
         clearInterval(interval)
       left()
     }
@@ -14,7 +14,7 @@ function goalieMovement() {
     var interval = setInterval(function() {
       
       goalie.style.left = `${goalie.offsetLeft - 2}px`
-      if (goalie.style.left === '360px'){
+      if (goalie.style.left === '100px'){
         clearInterval(interval)
       right()}
     }, 10);

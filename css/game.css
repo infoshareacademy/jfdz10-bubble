@@ -31,7 +31,9 @@ body {
 .goalie__container {
     width: 200px;
     height: 200px;
-    position: relative;
+    position: absolute;
+    top: 260px;
+    left:100px;
 }
 #goalie {
     width: 100%;
@@ -41,7 +43,4 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    position: absolute;
-    top: 340px;
-    left: 350px;
 }
