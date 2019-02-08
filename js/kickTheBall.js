@@ -33,8 +33,7 @@ function establishNewDirection() {
 
 function kickTheBall() {
     var ball = document.querySelector('#ball');
-    // addEventListener('keydown', event => {
-    //     if (event.code === 'KeyD') {
+
             ball.style.top = `${getStrength()}px`;
             if (establishNewDirection() === 'left') {
                 ball.style.left = `${(getDirection())}px`;
@@ -42,13 +41,9 @@ function kickTheBall() {
                 ball.style.left = `${(getDirection()) + 300}px`;
             }
             ball.style.height = `35px`;
-            ball.style.width = `35px`;
-            checkIfGoalScored();
-            resetGame()
-    //     }
-    // })
-}
+            ball.style.width = `35px`;            
 
+}
 
 
 
