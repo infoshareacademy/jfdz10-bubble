@@ -1,0 +1,55 @@
+.cookies-content {
+    
+    background-color: #c6cb7a;
+    width: 100%;
+    min-height: 40px;
+    margin: 0px auto 5px auto;
+    padding: 5px 0 5px 0;
+    border-radius: 40px; 
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+
+}
+
+.cookies-content p{
+    font-family:'Comfortaa', sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+    padding: 0px 35px;
+
+}
+
+#close-cookies-btn{
+    font-family:'Comfortaa', sans-serif;
+    font-weight: 200;
+    border: none;
+    background-color: #c6cb7a;
+    width: 20px;
+    height: 20px;
+    margin-left: 50px;
+    border-radius: 10px;
+
+}
+
+#close-cookies-btn:hover{
+    color: white;
+    transition: color 0.5s;
+}
+
+/**********************************************
+MEDIA QUERIES
+***********************************************/
+
+@media screen and (max-width: 768px){
+    .cookies-content{
+    flex-direction: column;
+    }
+
+    #close-cookies-btn{
+        margin: auto;
+    }
+}

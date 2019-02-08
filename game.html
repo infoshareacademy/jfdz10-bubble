@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,33 @@
     <title>Bubble Project - Playground</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
- 
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/game.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/ranking.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/ball.css" />
+    <link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet">
 </head>
 
 <body>
-    <div class="game"></div>
-    <div class="goalie"></div>
+    <div class="game-container">
+    <div class="game">
+        <div class="goalie__container">
+            <div id="goalie"></div>
+        </div>
+        <div id="direction-bar" class="bar"><div id="direction-bar-pointer" class="pointer"></div></div>
+        <div id="strength-bar" class="bar"><div id="strength-bar-pointer" class="pointer"></div></div>
+        <div id="ball"></div>
+        <ul id="scores" class="scores-hidden">
+            <div class="scores-close" onclick="closeScores()">X</div>
+            <div class="scores-visible-trophy-less"></div>
+        </ul>
+    </div>
+</div>
+    <script src='./js/open-game.js'></script>
+    <script src='./js/goalie.js'></script>
+    <script src="./js/points.js"></script>
+    <script src="./js/kick-direction.js"></script>
+    <script src="./js/kick-strength.js"></script>
+    <script src="./js/kickTheBall.js"></script>
+    <script src="./js/goal-or-miss.js"></script>
+    <script src="./js/reset-game.js"></script>
 </body>
