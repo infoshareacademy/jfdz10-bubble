@@ -50,6 +50,10 @@ body {
     width: 100%;
     justify-content: space-between;
 }
-.current__score, .tries {
+.current__score__container > div {
     font-size: 2em;
+}
+
+.instructions {
+    cursor: pointer;
 }
