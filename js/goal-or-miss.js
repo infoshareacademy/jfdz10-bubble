@@ -8,7 +8,7 @@ const post = {
 }
 
 function getGoalieBorders() {
-    let goalie = document.querySelector('#goalie');
+    let goalie = document.querySelector('.goalie__container');
     let goalieStyleLeft = goalie.offsetLeft;
     let goalieStyleRight = goalie.offsetLeft + 200;
     let goalieStyleTop = goalie.offsetTop;
