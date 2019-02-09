@@ -13,6 +13,6 @@ if (currentBackgroundIndex >= backgrounds.length) {
     currentBackgroundIndex = 0
 }
 
-backgrundElement.style.background = `url('./../images/${backgrounds[currentBackgroundIndex]}')`;
+backgrundElement.style.backgroundImage= `url('./../images/${backgrounds[currentBackgroundIndex]}')`;
 },3000);
 
