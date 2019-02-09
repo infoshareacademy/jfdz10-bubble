@@ -1,8 +1,7 @@
 backgroundMusic = new Audio('always.mp3');
-backgroundMusic.play();
 
 let musicBtn = document.querySelector('.music');
-let musicOn = true;
+let musicOn = false;
 
 function playPause() {
     if (musicOn) {

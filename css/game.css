@@ -80,7 +80,7 @@ body {
     width: 32px;
     height: 35px;
     margin-top: 4px;
-    background-image: url(/images/musicOn.png);
+    background-image: url(/images/musicOff.png);
     background-size: 32px;
     background-repeat: no-repeat;
     border-top-right-radius: 18px;
