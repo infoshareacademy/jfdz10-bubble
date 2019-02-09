@@ -13,6 +13,7 @@ function captureDirection() {
 
             document.addEventListener("keydown", function (event) {
                 if (event.key === 'a') {
+                    closeScores();
                     clearInterval(interval);
                 }
             });
