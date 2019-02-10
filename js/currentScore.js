@@ -10,6 +10,10 @@ triesNode.textContent = "TRIES: " + tries;
 function scoring() {   
     if (checkIfGoalScored()) {
         score++;
+        if(musicOn) {
+            var mySound = new sound();
+            mySound.play()
+        }
     } else {
         tries--;
         triesNode.textContent = "TRIES: " + tries;
