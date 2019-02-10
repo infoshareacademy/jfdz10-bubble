@@ -1,6 +1,6 @@
 function endGame() {
     var myInitials = prompt("Enter your initials:");
-    if (myInitials === '') {myInitials = 'noname'}
+    if (myInitials === '' || myInitials === null) {myInitials = 'noname'}
     let myScore = score;
 
     saveScoresInLocalStorage(myInitials, myScore);

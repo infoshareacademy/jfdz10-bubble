@@ -1,5 +1,5 @@
 var score = 0;
-var tries = 1; //TODO: zmień na 3
+var tries = 3;
 var currentScoreNode = document.getElementById('current__score');
 var triesNode = document.getElementById('tries');
 
