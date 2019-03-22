@@ -104,27 +104,6 @@
     }
 
     .navigation__menu__item a {
-        font-size: 13px;
-    }
-}
-
-@media (max-width: 400px) {
-    .menu__item__introduction a {
-        display:none;
-    }
-}
-@media (max-width: 302px) {
-    .menu__item__funcionalities {
-        display: none;
-    }
-}
-@media (max-width: 210px) {
-    .menu__item__newsletter {
-        display: none;
-    }
-}
-@media (max-width:140px){
-    .navigation {
-        display: none;
+        font-size: 0.6em;
     }
 }
